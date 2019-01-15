@@ -1,0 +1,115 @@
+p {
+    /* border-width: 15px;
+    border-style: groove;
+    border-color: #999; */
+    margin-bottom: 50px;
+    margin-top: 0;
+    background: #333;
+    color: #fff;
+    padding: 5px 15px 10px 2px;
+}
+h4 {
+    /* border: 15px solid; */
+    border-top: 5px solid blue;
+    border-right: 4px dotted red;
+    border-bottom: 6px dashed green;
+    border-left: 2px double black;
+}
+img {
+    border-radius: 50%;
+}
+.test {
+    background-color: rgb(168, 64, 64);
+    color: #fff;
+    height: 400px;
+    width: 100px;
+    min-width: 150px;
+}
+.test2 {
+    /* background-image: url("../img/Koala.jpg"); */
+    /* background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right center; */
+    /* background-size: cover; */
+    background: url("../img/Koala.jpg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+ul {
+    overflow: auto;
+    height: 100px;
+}
+a {
+    background: #333;
+    color: #fff;
+    text-decoration: unset;
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* transition-property: all;
+    transition-duration: 5000ms; */
+    transition: all 300ms;
+}
+a:hover {
+    background: red;
+    border-radius: 0;
+}
+.list {
+    list-style-type: upper-roman;
+    list-style-position: outside;
+    list-style: decimal inside;
+}
+.list li {
+    background: #333;
+    color: #fff;
+}
+@keyframes everest {
+    from {
+        background: red;
+        border-radius: 15px;
+        border: 3px solid green;
+    }
+    to {
+        background: green;
+        border-radius: 10px;
+        border:3px solid black;
+    }
+}
+.anime {
+    width: 200px;
+    height: 200px;
+    animation-name: everest;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: 5;
+    animation: everest 2s 1s reverse infinite;
+}
+@keyframes animationName {
+    0% {
+        width: 100px;
+        height: 200px;
+        background: red;
+    }
+    25% {
+        width: 150px;
+        height: 150px;
+        background: yellow;
+    }
+    50% {
+        width: 200px;
+        height: 100px;
+        background: green;
+    }
+    75% {
+        width: 250px;
+        height: 50px;
+        background: blue;
+    }
+    100% {
+        width: 100px;
+        height: 200px;
+        background: red;
+    }
+}
+.animation5 {
+    animation: animationName 5s infinite;
+}
